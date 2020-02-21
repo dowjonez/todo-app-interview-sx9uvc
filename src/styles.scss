@@ -1,2 +1,20 @@
 /* Add application styles & imports to this file! */
-@import "~@angular/material/prebuilt-themes/deeppurple-amber.css"
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "styles.css";
+
+.mat-form-field-infix {
+
+}
+
+
+.title-input  .mat-form-field-infix{
+  width: 400px !important;
+  
+}
+
+.title-input{
+  padding-bottom: 0;
+}
+.list .mat-form-field-wrapper{
+  padding-bottom: 5px;
+}

@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { CustomPreload } from './app-preload';
 import { TodoComponent } from './components/todos-component/todos.component';
 import { ReadmeComponent } from './components/readme/readme.component';
+import { TodoItemComponent } from './components/todo-item/todo-item.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/directions', pathMatch: 'full' },
@@ -10,6 +11,10 @@ export const routes: Routes = [
   {
     path: 'todos',
     component: TodoComponent
+  },
+  {
+    path: 'todo/:id',
+    component: TodoItemComponent
   }
 ];
 

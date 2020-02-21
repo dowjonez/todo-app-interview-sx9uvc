@@ -25,4 +25,6 @@ export const MaterialArray = [
   fromMaterial.MatMenuModule,
   fromMaterial.MatTooltipModule,
   fromMaterial.MatExpansionModule,
+  fromMaterial.MatDatepickerModule,
+  fromMaterial.MatNativeDateModule
 ];
