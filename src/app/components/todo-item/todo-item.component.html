@@ -1,0 +1,14 @@
+<div class="container" *ngIf="todo | async; let todo">
+
+  <mat-form-field appearance="legacy">
+    <mat-label>Title</mat-label>
+    <input matInput placeholder="" [(ngModel)]="todo.title" (change)="updateTitle(todo)">
+  </mat-form-field>
+
+    <mat-form-field class="date col-6" appearance="fill">
+      <input matInput [matDatepicker]="picker1" [ngModel]="todo.date" (dateInput)="dateChange($event, todo)">
+      <mat-label>Date</mat-label>
+      <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+      <mat-datepicker #picker1></mat-datepicker>
+    </mat-form-field> 
+</div>
